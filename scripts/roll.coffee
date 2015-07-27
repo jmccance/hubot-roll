@@ -49,6 +49,6 @@ module.exports = (robot) ->
       else if modifier > 0
         "+#{modifier}"
       else
-        "-#{modifier}"
+        "#{modifier}"
 
     res.reply "#{critText}#{reason}: #{total + modifier} (#{num}d#{sides}#{modifierText})#{resultsText}"

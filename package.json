@@ -1,6 +1,6 @@
 {
   "name": "hubot-roll",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An advanced polyhedral die roller for Hubot.",
   "main": "index.coffee",
   "scripts": {
