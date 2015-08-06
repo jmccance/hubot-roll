@@ -1,9 +1,10 @@
 {
   "name": "hubot-roll",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An advanced polyhedral die roller for Hubot.",
   "main": "index.coffee",
   "scripts": {
+    "robot": "hubot --adapter shell",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/jmccance/hubot-roll/issues"
   },
-  "homepage": "https://github.com/jmccance/hubot-roll#readme"
+  "homepage": "https://github.com/jmccance/hubot-roll#readme",
+  "devDependencies": {
+    "hubot": "^2.13.2"
+  }
 }
