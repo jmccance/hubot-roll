@@ -14,7 +14,17 @@ module.exports = (robot) ->
   robot.respond /roll (\d+)?d(\d+)( ?[+-]\d+)?( .*)?/i, (res) ->
     [_, num, sides, modifier, reason] = res.match.map((s) -> s.trim() if s?)
     num = if num? then parseInt(num) else 1
+    errorMsg = ""
+    if num > 20
+      num = 20
+      errorMsg = "Too many rolls, max is 20 "
+
     sides = parseInt(sides)
+
+    if sides > 100 
+       sides = 100
+       errorMsg = errorMsg + "Die too big, max is 100 "
+
     modifier = if modifier? then parseInt(modifier) else 0
 
     reason =
@@ -51,4 +61,4 @@ module.exports = (robot) ->
       else
         "#{modifier}"
 
-    res.reply "#{critText}#{reason}: #{total + modifier} (#{num}d#{sides}#{modifierText})#{resultsText}"
+    res.reply "#{errorMsg}#{critText}#{reason}: #{total + modifier} (#{num}d#{sides}#{modifierText})#{resultsText}"
