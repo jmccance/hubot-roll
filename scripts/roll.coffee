@@ -1,6 +1,12 @@
 # Description:
 #   Provides advanced die rolling functionality.
 #
+# Configuration:
+#   HUBOT_ROLL_MAX_ROLL -     Sets the maximum magnitude of a roll.
+#                             Default: 1e6.
+#   HUBOT_ROLL_MAX_RESULTS -  Set the cutoff for hiding individual results.
+#                             Default: 100.
+#
 # Commands:
 #   hubot roll NdM - rolls N M-sided dice and reports the result (N and reason are optional)
 #   hubot roll NdM reason - rolls N M-sided dice and reports the result and why you rolled it

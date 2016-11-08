@@ -2,6 +2,13 @@
 
 Hubot-roll is a polyhedral die roller for your Hubot instances.
 
+## Configuration
+
+There are two optional environment variables you can set for hubot-roll. There are reasonable defaults set for both of these, so you shouldn't need to fiddle with them unless you want to.
+
+* `HUBOT_ROLL_MAX_ROLL` (Default: 1e6): Sets the maximum magnitude of a roll to prevent users from crashing your Hubot. The magnitude of a roll is the produce of the number of dice and the sides per die.
+* `HUBOT_ROLL_MAX_RESULTS` (Default: 100): Sets a cutoff past which hubot-roll won't display individual results. This protects you from spammy interactions like `hubot roll 1000000d1`.
+
 ## Examples
 
 ```
