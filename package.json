@@ -4,7 +4,7 @@
   "description": "An advanced polyhedral die roller for Hubot.",
   "main": "index.coffee",
   "scripts": {
-    "robot": "hubot --adapter shell",
+    "start": "hubot --adapter shell",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/jmccance/hubot-roll#readme",
   "devDependencies": {
-    "hubot": "^2.13.2"
+    "hubot": "^2.19.0"
   }
 }
